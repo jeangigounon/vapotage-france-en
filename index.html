@@ -52541,7 +52541,7 @@ function civicBlock(r){
       <div class="civic-dot" style="left:${pos}%"></div></div>
     <div class="civic-ticks"><span>0</span><span>50 = French average</span><span>100</span></div>
     ${r.gauche != null && isFinite(r.gauche)
-      ? `<div class="civic-sub"><span>Left-wing vote, 2022 presidential election (1<sup>er</sup> round)</span>
+      ? `<div class="civic-sub"><span>Left-wing vote, 2022 presidential election (1<sup>st</sup> round)</span>
          <b>${r.gauche.toLocaleString('en-GB',{minimumFractionDigits:1,maximumFractionDigits:1})}%</b>
          <i>France: 31.9%</i></div>` : ''}
     <p class="note">${r.civRate != null && isFinite(r.civRate)

@@ -52150,7 +52150,7 @@ function renderLegend(){
       : (view.ind === 'vd' || view.ind === 'va' || view.ind === 'sm')
       ? 'Colour = estimated % among 18-75 year-olds. Bounds: 5th-95th percentile ' +
         (currentDept ? 'of municipalities.' : 'of departments.')
-      : 'Colour = estimated share among the municipality's vapers. Bounds: 5th-95th percentile '
+      : 'Colour = estimated share among the municipality’s vapers. Bounds: 5th-95th percentile '
         + (currentDept ? 'of municipalities.' : 'of departments.');
   } else {
     const gA = VIEWS[view.a], gB = VIEWS[view.b];
@@ -52477,7 +52477,7 @@ async function renderProfile(code, viaIris){
   const dept = deptOf(code);
   profcard.hidden = false;
   if(!profCache.has(dept)){
-    profbody.innerHTML = '<p class="note">Loading the municipality's detailed profile…</p>';
+    profbody.innerHTML = '<p class="note">Loading the municipality’s detailed profile…</p>';
   }
   const byCode = await loadProfiles(dept);
   if(seq !== profSeq) return;
